@@ -4,57 +4,63 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Bangers', cursive;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
 }
 
-.app{
+.app {
     height: 100vh;
+    background-image: url('https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-header h1{
+header h1 {
     margin: 50px 0px 30px 0px;
     text-align: center;
     font-size: 40px;
+    color: azure;
 }
 
-.pads{
-    background-color: aqua;
+.pads {
     width: 100%;
     display: flex;
 }
 
-.pads > div {
+.pads>div {
     height: 100px;
     width: 100px;
     flex: 1;
-    
-}
-
-.pad1{
 
 }
 
-.pad2{
-
+.pad1 {
+    background-color: rgb(98, 71, 170, 0.5);
 }
 
-.pad3{
-
+.pad2 {
+    background-color: rgb(255, 113, 91, 0.5);
 }
 
-.pad4{
-
+.pad3 {
+    background-color: rgb(239, 202, 8, 0.5);
 }
 
-.pad5{
-
+.pad4 {
+    background-color: rgb(52, 202, 182, 0.5);
 }
 
-.pad6{
+.pad5 {
+    background-color: rgb(136, 118, 111, 0.5);
+}
 
+.pad6 {
+    background-color: rgb(98, 168, 124, 0.5);
 }
