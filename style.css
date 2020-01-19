@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Bangers', cursive;
+  color: azure;
 }
 
 .app {
@@ -14,6 +15,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-image: url('https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 header h1 {
@@ -21,47 +25,62 @@ header h1 {
   text-align: center;
   font-size: 40px;
 }
+
 header p {
   font-size: 25px;
 }
 
 .pads {
-  background: lightblue;
   width: 100%;
   display: flex;
+  z-index: 2;
 }
-.pads > div {
-  height: 100px;
+
+.pads>div {
+  height: 120px;
   width: 100px;
   flex: 1;
 }
-.pad1 {
-  background: #60d394;
-}
-.pad2 {
-  background: #d36060;
-}
-.pad3 {
-  background: #c060d3;
-}
-.pad4 {
-  background: #d3d160;
-}
-.pad5 {
-  background: #606bd3;
-}
-.pad6 {
-  background: #60c2d3;
+
+.pads>div:hover {
+  -moz-box-shadow:    inset 0 0 15px #ffffff;
+   -webkit-box-shadow: inset 0 0 15px #ffffff;
+   box-shadow:         inset 0 0 15px #ffffff;
+   transition-duration: 0.2s;
 }
 
-.visual > div {
+.pad1 {
+  background: rgb(96, 211, 148);
+}
+
+.pad2 {
+  background: rgb(211, 96, 96);
+}
+
+.pad3 {
+  background: rgb(192, 96, 211);
+}
+
+.pad4 {
+  background: rgb(211, 209, 96);
+}
+
+.pad5 {
+  background: rgb(96, 107, 211);
+}
+
+.pad6 {
+  background: rgb(96, 194, 211);
+}
+
+.visual>div {
   position: absolute;
   bottom: 0%;
   height: 50px;
   width: 50px;
   border-radius: 50%;
   transform: scale(1);
-  z-index: -1;
+  z-index: 1;
 }
 
 @keyframes jump {
@@ -69,6 +88,7 @@ header p {
     bottom: 0%;
     left: 20%;
   }
+
   50% {
     bottom: 50%;
     left: 50%;
