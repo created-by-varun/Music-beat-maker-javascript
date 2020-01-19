@@ -11,6 +11,7 @@ window.addEventListener("load", () => {
     "rgb(96, 194, 211, 0.7)"
   ];
 
+  //play sounds
   pads.forEach((pad, index) => {
     pad.addEventListener("click", function() {
       sounds[index].currentTime = 0;
