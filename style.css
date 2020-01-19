@@ -1,66 +1,81 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Bangers', cursive;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
+  font-family: "Raleway", sans-serif;
 }
 
 .app {
-    height: 100vh;
-    background-image: url('https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-    margin: 50px 0px 30px 0px;
-    text-align: center;
-    font-size: 40px;
-    color: azure;
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+header p {
+  font-size: 25px;
 }
 
 .pads {
-    width: 100%;
-    display: flex;
+  background: lightblue;
+  width: 100%;
+  display: flex;
 }
-
-.pads>div {
-    height: 100px;
-    width: 100px;
-    flex: 1;
-
+.pads > div {
+  height: 100px;
+  width: 100px;
+  flex: 1;
 }
-
 .pad1 {
-    background-color: rgb(98, 71, 170, 0.5);
+  background: #60d394;
 }
-
 .pad2 {
-    background-color: rgb(255, 113, 91, 0.5);
+  background: #d36060;
 }
-
 .pad3 {
-    background-color: rgb(239, 202, 8, 0.5);
+  background: #c060d3;
 }
-
 .pad4 {
-    background-color: rgb(52, 202, 182, 0.5);
+  background: #d3d160;
 }
-
 .pad5 {
-    background-color: rgb(136, 118, 111, 0.5);
+  background: #606bd3;
+}
+.pad6 {
+  background: #60c2d3;
 }
 
-.pad6 {
-    background-color: rgb(98, 168, 124, 0.5);
+.visual > div {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 00%;
+    left: 80%;
+  }
 }
